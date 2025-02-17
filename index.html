@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.jpg" type="icon">
+    <title>MADURAI KAMARAJ UNIVERSITY</title>
+    <link rel="stylesheet" href="demo.css">
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit' 
+            };
+            document.getElementById("datetime").innerHTML = now.toLocaleDateString('en-US', options);
+        }
+        setInterval(updateDateTime, 1000); // Update every second
+    </script>
+</head>
+<body onload="updateDateTime()">
+   <div><img src="mku.png"></div>
+   
+ 
+    <button class="openbtn" onclick="openNav()">☰</button>  
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="login.html"><i class="fa-solid fa-user"></i>Login</a>
+        <a href="#contact"><i class="fa-solid fa-comment"></i>Feedback</a>
+        <a href=""><i class="fa-solid fa-graduation-cap"></i>Company</a>
+      </div>
+
+
+  <div id="datetime" ></div>
+   <h1>Madurai Kamaraj University Placement Cell</h1>
+   <img class="image2"src="placementimg.jpg">
+   <h2>About</h2>
+<p>The idea of MKU Placement Cell has been initiated by our Honorable Vice- Chancellor on understanding the need for permanent placement to all the students of MKU campus and its affiliated colleges. The reason being that most of the students hailed from rural sector not having required knowledge and
+     inputs related to career planning. Also the university being an apex body for all its ninety three affiliated colleges has a moral responsibility to offer required academic curriculum, teaching - learning practices, training and finally permanent placement for all the needy students to create sound society.</p><br>
+    <p>Incidentally, University Grants Commission (UGC) recentlyvide its letter F.No. 12-1/2013 (NSQF), dated: 19th December 2014, made it mandatory for all the Universities to establish a separate Placement Cell for strengthening the industry academia linkage and the counselling to the student community using the services
+     of National Skill Development Corporation (NSDC). The UGC strongly believes that this process of counseling and skill development would guide the students regarding pathways available for progression and facilitate their placements. Therefore, the UGC had constituted a steering committee on skill development under the chairmanship of Humble HRM on 17th September,
+      2014 and resolved that all the Universities should start a separate placement cell for fulfilling its objectives stated above.
+    </p>
+    <h2>Eligibility and Selection criteria</h2>
+    <P>
+        <i class="fa-solid fa-graduation-cap"></i>Students from Life Science Graduates / Post Graduates (Final year) or those Graduates / Post Graduates completed their degrees.<br>
+        <i class="fa-solid fa-graduation-cap"></i>First level of interview will be Aptitude Test at Madurai Kamaraj University, Palkalainagar Campus.<br>
+        <i class="fa-solid fa-graduation-cap"></i>Evaluated and shortlisted candidates have to attend one to one interview.<br>
+        <i class="fa-solid fa-graduation-cap"></i>Selected candidates will be given offer letters immediately and placement would be made in one of the three places stated above based on mutual convenience and interest.<br>
+        <i class="fa-solid fa-graduation-cap"></i>The list of the not selected candidates would be maintained in the data bank of i Source company and would be used when more manpower is required by the company.
+    </P>
+    <h2>VISION</h2>
+    <P>Shaping the student community for enhancing the opportunities of employability through training and skill development.</P>
+    <h2>MISSION </h2>
+    <p>Effective Utilisation of available resources on campus and drawing resources from National Skill Development Corporation (NSDC), New Delhi, industry, educational bodies and institutions, Research centresetc through collaborative initiatives.</p>
+    <h2>OBJECTIVES</h2>
+    <P>The Primary objective of placement cell Is to concentrate on institutional Initiatives to provide suitable opportunities of employment to all the Students of Madurai Kamaraj University. Also the Secondary objective is to extend this facility to all its affiliated colleges and approved Institutions.</P>
+    <section id="contact">
+        <div class="container">
+            <h2>Feedback</h2>
+            <form id="mtform" onsubmit="return validateform()">
+                <label for="text">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="message">Feedback:</label>
+                <textarea style="resize: none;" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btnn">submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="https://www.google.com/maps/place/Madurai+Kamaraj+University/@9.9407396,78.0109754,16z/data=!4m6!3m5!1s0x3b00cc1ae7231cc5:0xd69d09e3eb9c4b0b!8m2!3d9.9403922!4d78.0105374!16zL20vMDkxY2wz?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                <i class="fa-solid fa-location-dot"></i>: Madurai Kamaraj University, Palkalai Nagar, Madurai - 625021, Tamil Nadu,
+                India</a><br><br>
+             <a href="callto:+91-0452-2458471" ><i class="fa-solid fa-phone"></i>:+91-0452-2458471</a><br><br>
+             <a href="faxto:+91-0452-2459181"><i class="fa-solid fa-fax"> </i>: +91-0452-2459181</a><br><br>
+             <a href="mailto:registrar@mkuniversity.ac.in"><i class="fa-solid fa-envelope"></i>: registrar@mkuniversity.ac.in</a>
+        </div>
+        <p><center>&copy; 2025 Placement Cell, Madurai Kamaraj University, India.</center></p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    
+    
+</body>
+</html>

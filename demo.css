@@ -1,0 +1,249 @@
+/* General Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #004080, #00bfff);
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+
+
+/* Header Styling */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin: 40px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 2s ease-in-out;
+}
+
+/* Date and Time Styling */
+#datetime {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* About Section Styling */
+p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 1500px;
+    padding: 0 20px;
+    color: #f2f2f2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Contact Form Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form button {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #028a56;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #004080, #00bfff);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 40px auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer .fa-solid {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+footer .fa-solid:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #datetime {
+        font-size: 1rem;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .fa-solid {
+        font-size: 1.5rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-in-up Animation for Image */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.image2{
+    width: 500px;
+    height: 200px;
+    left: 60px;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 300px;
+    top: 125px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    animation: fadeIn 2s ease-in-out;
+}
+  
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Login | MKU</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Image Section -->
+    <div>
+        <img src="mku.png" alt="MKU Logo" title="MKU Logo">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="login.html"><i class="fa-solid fa-user"></i>Login</a>
+        <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        <a href=""><i class="fa-solid fa-graduation-cap"></i>Company</a>
+      </div>
+
+    <!-- Login Form Container -->
+    <div class="login-container">
+        <h1 class="login-title">LOGIN</h1>
+        <!-- Login Form -->
+        <form action="login.php" method="POST" class="login-form">
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="name" 
+                    placeholder="Enter your User Name" 
+                    required 
+                    autocomplete="username">
+            </div>
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="pswd">Password:</label>
+                <input 
+                    type="password" 
+                    id="pswd" 
+                    name="pswd" 
+                    placeholder="Enter your Password" 
+                    required 
+                    autocomplete="current-password">
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="login-btn">Login</button>
+            </div>
+            <!-- Additional Links -->
+            <div class="form-links">
+                <a href="forgot-password.html" class="register-link">Forgot Password?</a> |
+                <a href="register.html" class="register-link">New Register</a>
+            </div>
+        </form>
+    </div>
+      <a href="index.html" class="register-link">Back to Home</a>
+    <!-- JavaScript for Accessibility -->
+    <script>
+        // Accessibility: Autofocus on the first input field
+        document.getElementById('username').focus();
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+</body>
+</html>
