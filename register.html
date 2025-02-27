@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register | Placement Cell</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="mku.png" alt="MKU Logo" title="MKU Logo">
+    </div><br><br>
+    <div class="navbtn"><button class="openbtn" onclick="openNav()">☰</button></div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="login.html"><i class="fa-solid fa-user"></i>Login</a>
+        <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        <a href=""><i class="fa-solid fa-graduation-cap"></i>Company</a>
+    </div>
+    <div class="register-container">
+        <h1 class="register-title">Register for MKU Placement Cell</h1>
+        <form action="register.php" method="POST" id="registerForm">
+            <label for="role">Select Role:</label>
+            <select name="role" id="role" required>
+                <option value="">Select your role</option>
+                <option value="student">Student</option>
+                <option value="company">Company</option>
+                <option value="admin">Admin</option>
+            </select>
+              
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div id="studentFields" style="display: none;">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID">
+            </div>
+
+            <div id="companyFields" style="display: none;">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Enter Company Name">
+                <label for="companyId">Company ID:</label>
+                <input type="text" id="companyId" name="companyId" placeholder="Enter Company ID">
+            </div>
+
+           
+            
+            <button type="submit" class="register-btn">Register</button>
+            <button type="button" class="cancel-btn" onclick="window.location.href='index.html';">Cancel</button>
+            <button type="button" class="back-btn" onclick="window.history.back();">Back</button>
+        </form>
+    </div>
+    
+
+    <script>
+        document.getElementById("role").addEventListener("change", function () {
+            const role = this.value;
+            document.getElementById("studentFields").style.display = role === "student" ? "block" : "none";
+            document.getElementById("companyFields").style.display = role === "company" ? "block" : "none";
+        });
+
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>

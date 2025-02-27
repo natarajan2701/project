@@ -1,0 +1,157 @@
+/* General Reset for better consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background: linear-gradient(135deg, #004080, #00bfff);
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Section Styling */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 1510px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;  /* Adds rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);  /* Adds shadow */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* DateTime Styling */
+#datetime {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds text shadow */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* About Section Styling */
+p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    color: #f2f2f2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #004080, #00bfff);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 93%;
+    margin: 20px auto;
+    font-style: italic;
+}
+
+/* Footer Links Styling */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Footer Icons Styling */
+footer .fa-solid {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+footer .fa-solid:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce size for mobile */
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #datetime {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .fa-solid {
+        font-size: 1.5rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fade-in Animation for elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Scroll Effect on Images */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img {
+    animation: slideInUp 2s ease-in-out;
+}
